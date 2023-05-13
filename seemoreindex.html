@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Link FontIcons-->
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&family=Outfit:wght@100;400&display=swap" rel="stylesheet">
+        <!--*********************linkCss-->
+        <link rel="stylesheet" href="./css/style.css">
+        <title>final project-DBE</title>
+    </head>
+    <body>
+        <header>
+            <div class="container-header">
+                <img src="./images/logo.svg" alt="logo">
+                <h1 class="header-h1">
+                    Minimal
+                    <span>Shop</span>ping
+                </h1>
+            </div>
+            <div class="header-iconUserLogin">
+                <i class="fa-solid fa-user openBtn" onclick="openSearch()"></i>
+            </div>
+        </header>
+        <!--****************set main  **********************************-->
+        <main>
+            <div class="container">
+                <h2 class="mainProducts-header  title"> Products</h2>
+                <div class="containerProducts products-container">
+                    <div class="cardProduct" data-filter="t-shirt">
+                        <div class="position">
+                            <div class="btns-like">
+                                <button class="btn-like  btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardProduct-image   product" data-name="p-1">
+                            <img
+                                class="cardProduct-image__border-radius "
+                                src="./images/image 19.png"
+                                alt="img"
+                                data-filter="t-shirt"
+                            >
+                        </div>
+                        <div class="cardProduct-content  product" data-name="p-1">
+                            <div>
+                                <h3 class="cardProduct-content--heading-ProductNameTshirt">
+                                    Rounded neck - T shirt
+                                                        100% Cotton
+                                </h3>
+                                <h3>129$</h3>
+                            </div>
+                            <p>Organic Cotton, Fair Trade quality</p>
+                        </div>
+                    </div>
+                    <div class="cardProduct  " data-filter="t-shirt">
+                        <div class="position">
+                            <div class="btns-like">
+                                <button class="btn-like  btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardProduct-image  product" data-name="p-2">
+                            <img
+                                class="cardProduct-image__border-radius "
+                                src="./images/Rectangle 4.svg"
+                                alt="img"
+                                data-filter="t-shirt"
+                            >
+                        </div>
+                        <div class="cardProduct-content product" data-name="p-2">
+                            <div>
+                                <h3 class="cardProduct-content--heading-ProductNameTshirt">
+                                    Rounded neck - T shirt
+                                                    100% Cotton
+                                </h3>
+                                <h3>33$</h3>
+                            </div>
+                            <p>Organic Cotton, Fair Trade quality</p>
+                        </div>
+                    </div>
+                    <div class="cardProduct" data-filter="t-shirt">
+                        <div class="position">
+                            <div class="btns-like">
+                                <button class="btn-like  btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardProduct-image  product" data-name="p-4">
+                            <img
+                                class="cardProduct-image__border-radius "
+                                src="./images/air.svg"
+                                alt="img"
+                                data-filter="t-shirt"
+                            >
+                        </div>
+                        <div class="cardProduct-content  product" data-name="p-4" data-filter="t-shirt">
+                            <div>
+                                <h3 class="cardProduct-content--heading-ProductNameTshirt">
+                                    Rounded neck - T shirt
+                                                        100% Cotton
+                                </h3>
+                                <h3>1,299$</h3>
+                            </div>
+                            <p>Organic Cotton, Fair Trade quality</p>
+                        </div>
+                    </div>
+                    <div class="cardProduct " data-filter="t-shirt">
+                        <div class="position">
+                            <div class="btns-like">
+                                <button class="btn-like  btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardProduct-image product" data-name="p-3">
+                            <img
+                                class="cardProduct-image__border-radius "
+                                src="./images/Rectangle 7.svg"
+                                alt="img"
+                                data-filter="t-shirt"
+                            >
+                        </div>
+                        <div class="cardProduct-content product" data-name="p-3">
+                            <div>
+                                <h3 class="cardProduct-content--heading-ProductNameTshirt">
+                                    Rounded neck - T shirt
+                                                        100% Cotton
+                                </h3>
+                                <h3>44$</h3>
+                            </div>
+                            <p>Organic Cotton, Fair Trade quality</p>
+                        </div>
+                    </div>
+                    <div class="cardProduct  " data-filter="t-shirt">
+                        <div class="position">
+                            <div class="btns-like">
+                                <button class="btn-like  btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardProduct-image  product" data-name="p-2">
+                            <img
+                                class="cardProduct-image__border-radius "
+                                src="./images/Rectangle 4.svg"
+                                alt="img"
+                                data-filter="t-shirt"
+                            >
+                        </div>
+                        <div class="cardProduct-content product" data-name="p-2">
+                            <div>
+                                <h3 class="cardProduct-content--heading-ProductNameTshirt">
+                                    Rounded neck - T shirt
+                                                    100% Cotton
+                                </h3>
+                                <h3>33$</h3>
+                            </div>
+                            <p>Organic Cotton, Fair Trade quality</p>
+                        </div>
+                    </div>
+                    <div class="cardProduct" data-filter="t-shirt">
+                        <div class="position">
+                            <div class="btns-like">
+                                <button class="btn-like  btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardProduct-image  product" data-name="p-10">
+                            <img
+                                class="cardProduct-image__border-radius "
+                                src="./images/Rectangle 7.svg"
+                                alt="img"
+                                data-filter="t-shirt"
+                            >
+                        </div>
+                        <div class="cardProduct-content  product" data-name="p-10" data-filter="t-shirt">
+                            <div>
+                                <h3 class="cardProduct-content--heading-ProductNameTshirt">
+                                    Rounded neck - T shirt
+                                                        100% Cotton
+                                </h3>
+                                <h3>777$</h3>
+                            </div>
+                            <p>Organic Cotton, Fair Trade quality</p>
+                        </div>
+                    </div>
+                    <div class="cardProduct" data-filter="t-shirt">
+                        <div class="position">
+                            <div class="btns-like">
+                                <button class="btn-like  btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardProduct-image  product" data-name="p-11">
+                            <img
+                                class="cardProduct-image__border-radius "
+                                src="./images/image 19.png"
+                                alt="img"
+                                data-filter="t-shirt"
+                            >
+                        </div>
+                        <div class="cardProduct-content  product" data-name="p-11" data-filter="t-shirt">
+                            <div>
+                                <h3 class="cardProduct-content--heading-ProductNameTshirt">
+                                    Rounded neck - T shirt
+                                                        100% Cotton
+                                </h3>
+                                <h3>1,299$</h3>
+                            </div>
+                            <p>Organic Cotton, Fair Trade quality</p>
+                        </div>
+                    </div>
+                    <div class="cardProduct" data-filter="t-shirt">
+                        <div class="position">
+                            <div class="btns-like">
+                                <button class="btn-like  btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardProduct-image   product " data-name="p-9">
+                            <img
+                                class="cardProduct-image__border-radius "
+                                src="./images/Rectangle 5.svg"
+                                alt="img"
+                                data-filter="t-shirt"
+                            >
+                        </div>
+                        <div class="cardProduct-content  product" data-name="p-9">
+                            <div>
+                                <h3 class="cardProduct-content--heading-ProductNameTshirt">
+                                    Rounded neck - T shirt
+                                                        100% Cotton
+                                </h3>
+                                <h3>449$</h3>
+                            </div>
+                            <p>Organic Cotton, Fair Trade quality</p>
+                        </div>
+                    </div>
+                    <div class="cardProduct" data-filter="t-shirt">
+                        <div class="position">
+                            <div class="btns-like">
+                                <button class="btn-like  btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardProduct-image  product" data-name="p-5">
+                            <img
+                                class="cardProduct-image__border-radius "
+                                src="./images/Rectangle 4.svg"
+                                alt="img"
+                                data-filter="t-shirt"
+                            >
+                        </div>
+                        <div class="cardProduct-content   product" data-name="p-5" data-filter="t-shirt">
+                            <div>
+                                <h3 class="cardProduct-content--heading-ProductNameTshirt">
+                                    Rounded neck - T shirt
+                                                        100% Cotton
+                                </h3>
+                                <h3>55$</h3>
+                            </div>
+                            <p>Organic Cotton, Fair Trade quality</p>
+                        </div>
+                    </div>
+                    <div class="cardProduct   ">
+                        <div class="position">
+                            <div class="btns-like">
+                                <button class="btn-like  btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardProduct-image  product" data-name="p-6">
+                            <img class="cardProduct-image__border-radius " src="./images/Rectangle 6.svg" alt="img">
+                        </div>
+                        <div class="cardProduct-content product" data-name="p-6">
+                            <div>
+                                <h3 class="cardProduct-content--heading-ProductNameTshirt">
+                                    Rounded neck - T shirt
+                                                    100% Cotton
+                                </h3>
+                                <h3>122$</h3>
+                            </div>
+                            <p>Organic Cotton, Fair Trade quality</p>
+                        </div>
+                    </div>
+                    <div class="cardProduct " data-filter="">
+                        <div class="position">
+                            <div class="btns-like">
+                                <button class="btn-like  btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardProduct-image">
+                            <img
+                                class="cardProduct-image__border-radius product "
+                                src="./images/Rectangle 5.svg"
+                                alt="img"
+                                data-filter="iphon9"
+                                data-name="p-7"
+                            >
+                        </div>
+                        <div class="cardProduct-content product" data-name="p-7">
+                            <div>
+                                <h3 class="cardProduct-content--heading-ProductNameTshirt">
+                                    Rounded neck - T shirt
+                                                        100% Cotton
+                                </h3>
+                                <h3>85$</h3>
+                            </div>
+                            <p>Organic Cotton, Fair Trade quality</p>
+                        </div>
+                    </div>
+                    <div class="cardProduct  " data-filter="iphone9">
+                        <div class="position">
+                            <div class="btns-like">
+                                <button class="btn-like  btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardProduct-image product" data-name="p-8">
+                            <img
+                                class="cardProduct-image__border-radius "
+                                src="./images/imagf.webp"
+                                alt="img"
+                                data-filter="iphone9"
+                            >
+                        </div>
+                        <div class="cardProduct-content product  cardiphone" dataname="p-8" data-filter="iphone9">
+                            <div>
+                                <h3>
+                                    iPhone 9
+                                </h3>
+                                <h3>85$</h3>
+                            </div>
+                            <p>An apple mobile which is nothing like apple, An apple mobile which is nothing like apple</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="containerLinkSeeMore">
+                    <a class="SeeMoreProducts" href="./newsessonsproductsindex.html">
+                        WOW !new products ! soon ! See More
+                    </a>
+                </div>
+            </div>
+            <div class="products-preview">
+                <div class="preview" data-target="p-1">
+                    <i class="fas fa-times"></i>
+                    <div class="productDetails">
+                        <img src="./images/image 18.svg" alt="image">
+                        <div class="productDetails-containerContent">
+                            <span class="new">New!</span>
+                            <h3>Cotton sweatshirt</h3>
+                            <h3>$1,299</h3>
+                            <span class="brand">Brand: H & M</span>
+                            <P>Relaxed fit</P>
+                            <p> Crew neck</p>
+                            <p>  Drop shoulder sleeves</p>
+                            <p> Elasticated neckline, hemline and cuffs</p>
+                            <p>
+                                Made in Russia
+                                <P class="enddetails">Stock & Availability: 10</P>
+                                <div class="buttonsSize">
+                                    <span>Size</span>
+                                    <button type="" class="size">XS</button>
+                                    <button type="" class="size">S</button>
+                                    <button type="" class="size">M</button>
+                                    <button type="" class="size">L</button>
+                                </div>
+                                <button class="addtocart payment ">Add to Cart</button>
+                                <div class="closs">added to cart</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview" data-target="p-2">
+                        <i class="fas fa-times"></i>
+                        <div class="productDetails ">
+                            <img src="./images/Rectangle 4.svg" alt="image">
+                            <div class="productDetails-containerContent">
+                                <span class="new">New!</span>
+                                <h3>Cotton sweatshirt</h3>
+                                <h3>$33</h3>
+                                <span class="brand">Brand: H & M</span>
+                                <P class="enddetails">Stock & Availability: 8</P>
+                                <div class="buttonsSize">
+                                    <span>Size</span>
+                                    <button type="" class="size">XS</button>
+                                    <button type="" class="size">S</button>
+                                    <button type="" class="size">M</button>
+                                    <button type="" class="size">L</button>
+                                </div>
+                                <button class="payment addtocart">soon</button>
+                                <div class="closs">added to cart</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview" data-target="p-3">
+                        <i class="fas fa-times"></i>
+                        <div class="productDetails ">
+                            <img src="./images/Rectangle 7.svg" alt="image">
+                            <div class="productDetails-containerContent">
+                                <span class="new">New!</span>
+                                <h3>Cotton sweatshirt</h3>
+                                <h3>$44</h3>
+                                <span class="brand">Brand: H & M</span>
+                                <P class="enddetails">Stock & Availability: 19</P>
+                                <div class="buttonsSize">
+                                    <span>Size</span>
+                                    <button type="" class="size">XS</button>
+                                    <button type="" class="size">S</button>
+                                    <button type="" class="size">M</button>
+                                    <button type="" class="size">L</button>
+                                </div>
+                                <button class="payment addtocart">soon</button>
+                                <div class="closs">added to cart</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview" data-target="p-4">
+                        <i class="fas fa-times"></i>
+                        <div class="productDetails ">
+                            <img src="./images/air.svg" alt="image">
+                            <div class="productDetails-containerContent">
+                                <span class="new">New!</span>
+                                <h3>Cotton sweatshirt</h3>
+                                <h3>$1,299</h3>
+                                <span class="brand">Brand: H & M</span>
+                                <p>  Drop shoulder sleeves</p>
+                                <P class="enddetails">Stock & Availability: 10</P>
+                                <div class="buttonsSize">
+                                    <span>Size</span>
+                                    <button type="" class="size">XS</button>
+                                    <button type="" class="size">S</button>
+                                    <button type="" class="size">M</button>
+                                    <button type="" class="size">L</button>
+                                </div>
+                                <button class="addtocart payment ">Add to Cart</button>
+                                <div class="closs">added to cart</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview" data-target="p-5">
+                        <i class="fas fa-times"></i>
+                        <div class="productDetails ">
+                            <img src="./images/Rectangle 4.svg" alt="image">
+                            <div class="productDetails-containerContent">
+                                <span class="new">New!</span>
+                                <h3>Cotton sweatshirt</h3>
+                                <h3>$55</h3>
+                                <span class="brand">Brand: H & M</span>
+                                <P class="enddetails">Stock & Availability: 18</P>
+                                <div class="buttonsSize">
+                                    <span>Size</span>
+                                    <button type="" class="size">XS</button>
+                                    <button type="" class="size">S</button>
+                                    <button type="" class="size">M</button>
+                                    <button type="" class="size">L</button>
+                                </div>
+                                <div class="jsBtnContainer">
+                                    <button class="addtocart payment ">soon</button>
+                                </div>
+                                <div class="closs">added to cart</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview" data-target="p-6">
+                        <i class="fas fa-times"></i>
+                        <div class="productDetails ">
+                            <img src="./images/Rectangle 6.svg" alt="image">
+                            <div class="productDetails-containerContent">
+                                <span class="new">New!</span>
+                                <h3>Cotton sweatshirt</h3>
+                                <h3>$122</h3>
+                                <span class="brand">Brand: H & M</span>
+                                <p>  Drop shoulder sleeves</p>
+                                <P class="enddetails">Stock & Availability: 10</P>
+                                <div class="buttonsSize">
+                                    <span>Size</span>
+                                    <button type="" class="size">XS</button>
+                                    <button type="" class="size">S</button>
+                                    <button type="" class="size">M</button>
+                                    <button type="" class="size">L</button>
+                                </div>
+                                <button class="payment addtocart">soon</button>
+                                <div class="closs">added to cart</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview" data-target="p-7">
+                        <i class="fas fa-times"></i>
+                        <div class="productDetails ">
+                            <img src="./images/Rectangle 5.svg" alt="image">
+                            <div class="productDetails-containerContent">
+                                <span class="new">New!</span>
+                                <h3>Cotton sweatshirt</h3>
+                                <h3>$85</h3>
+                                <span class="brand">Brand: H & M</span>
+                                <P class="enddetails">Stock & Availability: 10</P>
+                                <div class="buttonsSize">
+                                    <span>Size</span>
+                                    <button type="" class="size">XS</button>
+                                    <button type="" class="size">S</button>
+                                    <button type="" class="size">M</button>
+                                    <button type="" class="size">L</button>
+                                </div>
+                                <button class="addtocart payment ">soon</button>
+                                <div class="closs">added to cart</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview" data-target="p-8">
+                        <i class="fas fa-times"></i>
+                        <div class="productDetails ">
+                            <img src="./images/imagf.webp" alt="image">
+                            <div class="productDetails-containerContent">
+                                <span class="new">New!</span>
+                                <h3>iphon9</h3>
+                                <h3>$85</h3>
+                                <span class="brand">Brand: appil & M</span>
+                                <p> new mobile</p>
+                                <P class="enddetails">Stock & Availability: 20</P>
+                                <div class="buttonsSize">
+                                    <span>Size</span>
+                                    <button type="" class="size">XS</button>
+                                    <button type="" class="size">S</button>
+                                    <button type="" class="size">M</button>
+                                    <button type="" class="size">L</button>
+                                </div>
+                                <button class="addtocart paymentt ">soon</button>
+                                <div class="closs">added to cart</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview" data-target="p-9">
+                        <i class="fas fa-times"></i>
+                        <div class="productDetails">
+                            <img src="./images/Rectangle 5.svg" alt="image">
+                            <div class="productDetails-containerContent">
+                                <span class="new">New!</span>
+                                <h3>Cotton sweatshirt</h3>
+                                <h3>$449</h3>
+                                <span class="brand">Brand: H & M</span>
+                                <P>Relaxed fit</P>
+                                <p> Crew neck</p>
+                                Made in Russia
+                                <P class="enddetails">Stock & Availability: 10</P>
+                                <div class="buttonsSize">
+                                    <span>Size</span>
+                                    <button type="" class="size">XS</button>
+                                    <button type="" class="size">S</button>
+                                    <button type="" class="size">M</button>
+                                    <button type="" class="size">L</button>
+                                </div>
+                                <button class="addtocart payment ">soon</button>
+                                <div class="closs">added to cart</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview" data-target="p-10">
+                        <i class="fas fa-times"></i>
+                        <div class="productDetails ">
+                            <img src="./images/Rectangle 7.svg" alt="image">
+                            <div class="productDetails-containerContent">
+                                <span class="new">New!</span>
+                                <h3>Cotton sweatshirt</h3>
+                                <h3>$777</h3>
+                                <span class="brand">Brand: H & M</span>
+                                <P class="enddetails">Stock & Availability: 8</P>
+                                <div class="buttonsSize">
+                                    <span>Size</span>
+                                    <button type="" class="size">XS</button>
+                                    <button type="" class="size">S</button>
+                                    <button type="" class="size">M</button>
+                                    <button type="" class="size">L</button>
+                                </div>
+                                <button class="payment addtocart">soon</button>
+                                <div class="closs">added to cart</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview" data-target="p-11">
+                        <i class="fas fa-times"></i>
+                        <div class="productDetails ">
+                            <img src="./images/image 19.png" alt="image">
+                            <div class="productDetails-containerContent">
+                                <span class="new">New!</span>
+                                <h3>Cotton sweatshirt</h3>
+                                <h3>$1,229</h3>
+                                <span class="brand">Brand: H & M</span>
+                                <P class="enddetails">Stock & Availability: 19</P>
+                                <div class="buttonsSize">
+                                    <span>Size</span>
+                                    <button type="" class="size">XS</button>
+                                    <button type="" class="size">S</button>
+                                    <button type="" class="size">M</button>
+                                    <button type="" class="size">L</button>
+                                </div>
+                                <button class="payment addtocart">soon</button>
+                                <div class="closs">added to cart</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <script src="./script/script.js"></script>
+        </body>
+    </html>

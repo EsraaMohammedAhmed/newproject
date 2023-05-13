@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Link FontIcons-->
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&family=Outfit:wght@100;400&display=swap" rel="stylesheet">
+        <!--*********************linkCss-->
+        <link rel="stylesheet" href="./css/style.css">
+        <title>final project-DBE</title>
+    </head>
+    <body>
+        <header>
+            <div class="container-header">
+                <img src="./images/logo.svg" alt="logo">
+                <h1 class="header-h1">
+                    Minimal
+                    <span>Shop</span>ping
+                </h1>
+            </div>
+            <div class="header-iconUserLogin">
+                <i class="fa-solid fa-user openBtn" onclick="openSearch()"></i>
+            </div>
+        </header>
+        <!--/************************main content***************************************/-->
+        <main>
+            <div class="mainfilter">
+                <p class="filter">Filter Image to favourit product !</p>
+                <ul>
+                    <li class="active">All Menu</li>
+                    <li>t-shirts&sports</li>
+                    <li>iphone</li>
+                    <li>t-shirts&womens</li>
+                </ul>
+                <div class="container productt">
+                    <img src="./images/air.svg" data-filter="t-shirts&sports">
+                    <img src="./images/6df1cd13a219389438c09cd9dacde4bd.jpg" data-filter="t-shirts&sports">
+                    <img src="./images/Rectangle 5.svg" data-filter="t-shirts&womens">
+                    <img src="./images/162e4b485c17fd57708708a292b4efd7.jpg" data-filter="t-shirts&sports">
+                    <img src="./images/054e7c21de67cb3457ae6e2761a59fa8.jpg" data-filter="t-shirts&sports">
+                    <img src="./images/03-iphone-12-mini-3.webp" data-filter="iphone">
+                    <img src="./images/44.jpg" data-filter="t-shirts&sports">
+                    <img src="./images/442.jpg" data-filter="t-shirts&sports">
+                    <img src="./images/f6.jpg" data-filter="t-shirts&womens">
+                    <img src="./images/98.jpg" data-filter="t-shirts&womens">
+                    <img src="./images/apple-iphone-14-3.jpg" data-filter="iphone">
+                    <img src="./images/image 19.svg" data-filter="t-shirts& womens">
+                    <img src="./images/9ba0f0247251ed69d14cfa50ee8ad695.jpg" data-filter="t-shirts&sports">
+                    <img src="./images/98.jpg" data-filter="t-shirts&sports">
+                    <img src="./images/a4e66130046b8ab7a14bae66c88af0ed.jpg" data-filter="t-shirts&sports">
+                    <img src="./images/11.jpg" data-filter="t-shirts&sports">
+                </div>
+            </div>
+        </main>
+        <script>
+    const liItem = document.querySelectorAll('ul li');
+    const imgItem = document.querySelectorAll('.productt img');
+
+    liItem.forEach(li => {
+       li.onclick = function() {
+        //active
+        liItem.forEach(li => {
+            li.className = "";
+        })
+        li.className = "active";
+
+        //Filter
+        const value = li.textContent;
+        imgItem.forEach(img => {
+            img.style.display = 'none';
+            if (img.getAttribute('data-filter') == value.toLowerCase() || value == "All Menu") {
+                img.style.display = 'block';
+            }
+        })
+       }
+    });
+        </script>
+    </body>
+</html>
